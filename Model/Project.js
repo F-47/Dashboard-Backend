@@ -7,8 +7,8 @@ let projectSchema = new mongoose.Schema({
   },
   Members: [
     {
-      name: String,
-      image: String,
+      memberName: String,
+      memberImage: String,
     },
   ],
   date: {
