@@ -17,7 +17,6 @@ exports.getProjectById = (req, res, next) => {
 exports.createProject = async (req, res, next) => {
     let project = new Project(req.body);
     let result = await Project.findOne({ projectName: project.projectName });
-    console.log(result)
     if (result) {
       return res.status(403).send({ message: "Project Name Already Exists" });
     }

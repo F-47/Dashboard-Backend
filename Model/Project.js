@@ -11,6 +11,10 @@ let projectSchema = new mongoose.Schema({
       memberImage: String,
     },
   ],
+  category: {
+    type: String,
+    required: true,
+  },
   date: {
     type: Date,
     default: Date.now,
